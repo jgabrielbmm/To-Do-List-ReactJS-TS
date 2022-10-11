@@ -1,0 +1,105 @@
+.tasks {
+  width: 46rem;
+  height: 18rem;
+  margin-top: 4rem;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.createdTasks {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.createdTasks p {
+  color: var(--blue-300);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.doneTasks {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.doneTasks p {
+  color: var(--purple-400);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.counter {
+  width: 1.5625rem;
+  height: 1.1875rem;
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counterCompleted {
+  width: 4rem;
+  height: 1.1875rem;
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter span {
+  margin: 0.125rem 2rem;
+  color: var(--gray-100);
+  font-size: 0.75rem;
+}
+
+.counterCompleted span {
+  color: var(--gray-100);
+  font-size: 0.75rem;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.noTaskMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noTaskMessage > img {
+  margin-top: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.textContainer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.textContainer p:first-child {
+  font-weight: 700;
+  color: var(--gray-300);
+  line-height: 2;
+}
+
+.textContainer p :last-child {
+  color: var(--gray-300);
+  line-height: 2;
+}

@@ -1,0 +1,71 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 4.5rem;
+  background-color: var(--gray-500);
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+
+
+.labelContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.labelContainer input[type="checkbox"] {
+  display: none;
+}
+
+.labelContainer input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background: url("../assets/check.svg") no-repeat;
+  background-size: 1.5rem;
+  margin-top: 0.125rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+.labelContainer input[type="checkbox"]:checked + label::before {
+  content: "";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background: url("../assets/checked.svg") no-repeat;
+  background-size: 1.5rem;
+  margin-top: 0.125rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.labelTask span {
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  line-height: 2;
+  vertical-align: top;
+}
+
+input[type="checkbox"]:checked + .labelTask span{
+  text-decoration-line: line-through;
+  color: var(--gray-300);
+}
+
+.deleteButton {
+  background-color: transparent;
+  color: var(--gray-300);
+  border: none;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  color: var(--red-400);
+}

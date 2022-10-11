@@ -1,0 +1,40 @@
+.form {
+  width: 46rem;
+  height: 3.375rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: calc(0px - 3.375rem/2);
+}
+
+.newTaskInput {
+  width: 40rem;
+  height: 3.375rem;
+  border-radius: 8px;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  line-height: 140%;
+  padding-left: 1rem;
+}
+
+.newTaskButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 5.625rem;
+  height: 3.375rem;
+  background-color: var(--blue-600);
+  color: var(--gray-100);
+  border-radius: 8px;
+  font-weight: 700;
+  line-height: 2;
+  font-size: 0.875rem;
+}
+
+
+
+.plus {
+  height: 1rem;
+  width: 1rem;
+}
+
